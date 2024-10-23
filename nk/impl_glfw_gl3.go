@@ -1,11 +1,10 @@
-// +build !android
-// +build !opengl2
-// +build !sdl2
+//go:build !android && !opengl2 && !sdl2
+// +build !android,!opengl2,!sdl2
 
 package nk
 
 /*
-#cgo CFLAGS: -DNK_INCLUDE_FIXED_TYPES -DNK_INCLUDE_STANDARD_IO -DNK_INCLUDE_DEFAULT_ALLOCATOR -DNK_INCLUDE_FONT_BAKING -DNK_INCLUDE_DEFAULT_FONT -DNK_INCLUDE_VERTEX_BUFFER_OUTPUT -Wno-implicit-function-declaration
+#cgo CFLAGS: -w -DNK_INCLUDE_FIXED_TYPES -DNK_INCLUDE_STANDARD_IO -DNK_INCLUDE_DEFAULT_ALLOCATOR -DNK_INCLUDE_FONT_BAKING -DNK_INCLUDE_DEFAULT_FONT -DNK_INCLUDE_VERTEX_BUFFER_OUTPUT -Wno-implicit-function-declaration
 #cgo windows LDFLAGS: -Wl,--allow-multiple-definition
 #include <string.h>
 

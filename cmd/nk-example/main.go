@@ -2,12 +2,13 @@ package main
 
 import (
 	"C"
+
 	"log"
 	"runtime"
 	"time"
 
 	"github.com/go-gl/gl/v3.2-core/gl"
-	"github.com/go-gl/glfw/v3.2/glfw"
+	"github.com/go-gl/glfw/v3.3/glfw"
 	"github.com/golang-ui/nuklear/nk"
 	"github.com/xlab/closer"
 )
@@ -175,8 +176,4 @@ type State struct {
 	prop    int32
 	opt     Option
 	text    nk.TextEdit
-}
-
-func onError(code int32, msg string) {
-	log.Printf("[glfw ERR]: error %d: %s", code, msg)
 }

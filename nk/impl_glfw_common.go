@@ -1,10 +1,10 @@
-// +build !android
-// +build !sdl2
+//go:build !android && !sdl2
+// +build !android,!sdl2
 
 package nk
 
 /*
-#cgo CFLAGS: -DNK_INCLUDE_FIXED_TYPES -DNK_INCLUDE_STANDARD_IO -DNK_INCLUDE_DEFAULT_ALLOCATOR -DNK_INCLUDE_FONT_BAKING -DNK_INCLUDE_DEFAULT_FONT -DNK_INCLUDE_VERTEX_BUFFER_OUTPUT -Wno-implicit-function-declaration
+#cgo CFLAGS: -w -DNK_INCLUDE_FIXED_TYPES -DNK_INCLUDE_STANDARD_IO -DNK_INCLUDE_DEFAULT_ALLOCATOR -DNK_INCLUDE_FONT_BAKING -DNK_INCLUDE_DEFAULT_FONT -DNK_INCLUDE_VERTEX_BUFFER_OUTPUT -Wno-implicit-function-declaration
 #cgo windows LDFLAGS: -Wl,--allow-multiple-definition
 #include <string.h>
 
@@ -14,7 +14,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/go-gl/glfw/v3.2/glfw"
+	"github.com/go-gl/glfw/v3.3/glfw"
 )
 
 type PlatformInitOption int
@@ -37,7 +37,7 @@ func (c *NkGLFWClipbard) SetText(content string) {
 }
 
 func (c *NkGLFWClipbard) GetText() (string, error) {
-	return c.window.GetClipboardString()
+	return c.window.GetClipboardString(), nil
 }
 
 func NkPlatformInit(win *glfw.Window, opt PlatformInitOption) *Context {
