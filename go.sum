@@ -4,8 +4,6 @@ github.com/go-gl/glfw v0.0.0-20240506104042-037f3cc74f2a h1:FAC6eA052T8d4Lp5GR38
 github.com/go-gl/glfw v0.0.0-20240506104042-037f3cc74f2a/go.mod h1:wyvWpaEu9B/VQiV1jsPs7Mha9I7yto/HqIBw197ZAzk=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20240506104042-037f3cc74f2a h1:vxnBhFDDT+xzxf1jTJKMKZw3H0swfWk9RpWbBbDK5+0=
 github.com/go-gl/glfw/v3.3/glfw v0.0.0-20240506104042-037f3cc74f2a/go.mod h1:tQ2UAYgL5IevRw8kRxooKSPJfGvJ9fJQFa0TUsXzTg8=
-github.com/agreppin/nuklear v0.0.0-20231115163627-2440a671efc5 h1:t00XavEnPpJOFDwMpJ1BfXqJuIoBGdlT16LmDBF6OBM=
-github.com/agreppin/nuklear v0.0.0-20231115163627-2440a671efc5/go.mod h1:xX2vbAOtImdmMK3nPye2JyxCZbPmbjg/IVBIzuxReKU=
 github.com/veandco/go-sdl2 v0.4.40 h1:fZv6wC3zz1Xt167P09gazawnpa0KY5LM7JAvKpX9d/U=
 github.com/veandco/go-sdl2 v0.4.40/go.mod h1:OROqMhHD43nT4/i9crJukyVecjPNYYuCofep6SNiAjY=
 github.com/xlab/android-go v0.0.0-20221106204035-3cc54d5032fa h1:fJnl39vCautixum6jJL40AULKdF1r+2/IWzPHOcFCeM=
