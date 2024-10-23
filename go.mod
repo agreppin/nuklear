@@ -1,4 +1,4 @@
-module github.com/golang-ui/nuklear
+module github.com/agreppin/nuklear
 
 go 1.23.2
 

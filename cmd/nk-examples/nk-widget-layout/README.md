@@ -25,7 +25,7 @@ For actually more advanced UI I would even recommend using the `nk.NkLayoutSpace
 Make sure, that the following packages are installed
   - github.com/go-gl/gl/v3.2-core/gl
   - github.com/go-gl/glfw/v3.2/glfw
-  - github.com/golang-ui/nuklear/nk
+  - github.com/agreppin/nuklear/nk
   - github.com/xlab/closer
 
 Then run

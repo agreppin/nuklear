@@ -1,4 +1,4 @@
-## Nuklear [![version-2.00.6](https://img.shields.io/badge/version-2.00.6-lightgrey.svg)](/CHANGELOG.txt) [![GoDoc](https://godoc.org/github.com/golang-ui/nuklear/nk?status.svg)](https://godoc.org/github.com/golang-ui/nuklear/nk)
+## Nuklear [![version-2.00.6](https://img.shields.io/badge/version-2.00.6-lightgrey.svg)](/CHANGELOG.txt) [![GoDoc](https://godoc.org/github.com/agreppin/nuklear/nk?status.svg)](https://godoc.org/github.com/agreppin/nuklear/nk)
 
 Package nk provides Go bindings for nuklear.h — a small ANSI C gui library. See [github.com/vurtun/nuklear](https://github.com/vurtun/nuklear).<br />
 All the binding code has automatically been generated with rules defined in [nk.yml](/nk.yml).
@@ -69,13 +69,13 @@ Fedora(tested on 28):
 After that, standard `go get` should work:
 
 ```
-$ go get github.com/golang-ui/nuklear/nk
+$ go get github.com/agreppin/nuklear/nk
 ```
 
 On desktop both OpenGL 2.1 and OpenGL 3.2 contexts are working fine, but by default OpenGL 3.2-core is used, to compile with OpenGL 2.1 support instead. The 2.1 backend is for legacy hardware or VMs like Parallels.
 
 ```
-$ go get -tags opengl2 github.com/golang-ui/nuklear/nk
+$ go get -tags opengl2 github.com/agreppin/nuklear/nk
 ```
 
 Additional steps for Windows users:
@@ -94,17 +94,17 @@ COLLECT_GCC=C:\MinGW\bin\gcc.exe
 Thread model: posix
 gcc version 5.3.0 (GCC)
 
-$ go install github.com/golang-ui/nuklear/nk
+$ go install github.com/agreppin/nuklear/nk
 ```
 
 Hint: use `-tags sdl2` to run with SDL2 instead of GLFW. SDL2 requires additional installation process, see [SDL2](https://github.com/veandco/go-sdl2). Use GLFW if you want to stay go-get-able.
 
 ### Android demo
 
-In order run Android demo app [nk-android](https://github.com/golang-ui/nuklear/blob/master/cmd/nk-android/main.go) make sure that you've prepared your environent as described in plain [example](https://github.com/xlab/android-go/tree/master/example) Android app. Namely you need to install Android SDK, tools and run `make toolchain`:
+In order run Android demo app [nk-android](https://github.com/agreppin/nuklear/blob/master/cmd/nk-android/main.go) make sure that you've prepared your environent as described in plain [example](https://github.com/xlab/android-go/tree/master/example) Android app. Namely you need to install Android SDK, tools and run `make toolchain`:
 
 ```bash
-$ cd $GOPATH/src/github.com/golang-ui/nuklear/cmd/nk-android
+$ cd $GOPATH/src/github.com/agreppin/nuklear/cmd/nk-android
 $ make toolchain # need to run once
 
 # the regular routine:
@@ -119,10 +119,10 @@ $ make listen
 
 ### Desktop demo
 
-There is an example app [nk-example](https://github.com/golang-ui/nuklear/blob/master/cmd/nk-example/main.go) that shows the usage of Nuklear GUI library, based on the official demos.
+There is an example app [nk-example](https://github.com/agreppin/nuklear/blob/master/cmd/nk-example/main.go) that shows the usage of Nuklear GUI library, based on the official demos.
 
 ```bash
-$ go get github.com/golang-ui/nuklear/cmd/nk-example
+$ go get github.com/agreppin/nuklear/cmd/nk-example
 
 $ nk-example
 2016/09/23 23:13:09 glfw: created window 400x500
@@ -142,7 +142,7 @@ Another more realistic Go application that uses Nuklear to do its GUI, [a simple
 You will need to get the [c-for-go](https://git.io/c-for-go) tool installed first.
 
 ```
-$ git clone https://github.com/golang-ui/nuklear && cd nuklear
+$ git clone https://github.com/agreppin/nuklear && cd nuklear
 $ make clean
 $ make
 ```

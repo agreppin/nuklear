@@ -6,7 +6,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/golang-ui/nuklear/nk"
+	"github.com/agreppin/nuklear/nk"
 	"github.com/xlab/android-go/android"
 	"github.com/xlab/android-go/app"
 	gl "github.com/xlab/android-go/gles3"

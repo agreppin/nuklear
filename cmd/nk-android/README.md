@@ -2,7 +2,7 @@ Nuklear Activity
 ================
 
 This android app is built using [android-go](http://github.com/xlab/android-go) framework,
-and the GUI is done via [nuklear](http://github.com/golang-ui/nuklear) that uses Android NDK as a backend.
+and the GUI is done via [nuklear](http://github.com/agreppin/nuklear) that uses Android NDK as a backend.
 It manages an OpenGL ES 2.0 or 3.0 context via EGL to draw stuff on the screen and gets touch input from the sensors.
 
 ### Prerequisites

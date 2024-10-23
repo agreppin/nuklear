@@ -1,5 +1,5 @@
 ## nk-examples
-Here are some examples of how to use golang-ui/nuklear. It is based on [the original nuklear doc](https://github.com/vurtun/nuklear/tree/master/doc).
+Here are some examples of how to use agreppin/nuklear. It is based on [the original nuklear doc](https://github.com/vurtun/nuklear/tree/master/doc).
 As these explanations are far from being complete you should definitely have a look at the original doc if you have particular problem, which is not described. 
 
 
